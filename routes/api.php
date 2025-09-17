@@ -38,7 +38,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/accept/{playerId}', [FriendController::class, 'acceptRequest']);
         Route::post('/remove/{playerId}', [FriendController::class, 'removeFriend']);
         Route::get('/list', [FriendController::class, 'listFriends']);
-        Route::get('/online', [FriendController::class, 'onlineFriends']);
+        Route::get('/online', [FriendController::class, 'onlineFriends']);  
     });
 
     Route::prefix('match')->group(function () {
