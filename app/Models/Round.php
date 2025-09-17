@@ -9,7 +9,7 @@ class Round extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
+    protected $fillable = [ 
         'game_id', 
         'trump', 
         'team1_hands', 
